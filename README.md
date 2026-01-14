@@ -6,7 +6,8 @@ A friendly, modern tmux setup inspired by LazyVim and Zellij.
 - IDE-like status bar (ssh, cpu, time)
 - which-key menus (`prefix + Space`)
 - mouse support
-- session restore
+- autosave session or manually (`prefix + Ctrl-s`)
+- session auto restore or manually (`prefix + Ctrl-r`)
 - Catppuccin theme
 - macOS & SSH friendly
 
