@@ -12,14 +12,17 @@ A friendly, modern tmux setup inspired by LazyVim and Zellij.
 
 ## Install (macOS)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Sansan4ez/oh-my-tmux/main/install.sh | sh
-tmux
+curl -fsSL https://raw.githubusercontent.com/Sansan4ez/oh-my-tmux/main/install.sh | bash
 ```
 or just copy tmux.conf and tpm plugin:
 ```
 git clone https://github.com/Sansan4ez/oh-my-tmux.git ~/.oh-my-tmux
 cp ~/.oh-my-tmux/tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+## Run TMUX
+```
 tmux
 ```
 
