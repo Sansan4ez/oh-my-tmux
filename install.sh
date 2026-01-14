@@ -26,15 +26,20 @@ need_cmd git
 
 # tmux check (install if possible on macOS)
 if ! command -v tmux >/dev/null 2>&1; then
-  if is_macos; then
+  if [[ "${OSTYPE:-}" == "darwin"* ]]; then
     if command -v brew >/dev/null 2>&1; then
       say "==> tmux not found; installing via Homebrew..."
       brew install tmux
     else
-      die "tmux not found. Install Homebrew or install tmux manually."
+      die "tmux not found. Please install Homebrew or tmux manually."
     fi
   else
-    die "tmux not found. Install tmux via your package manager."
+    die "tmux not found.
+Please install tmux using your package manager, for example:
+  Debian/Ubuntu: sudo apt install tmux
+  Fedora:        sudo dnf install tmux
+  Arch:          sudo pacman -S tmux
+Then re-run this script."
   fi
 fi
 
