@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_DEFAULT="https://github.com/<YOU>/oh-my-tmux.git"
+REPO_DEFAULT="https://github.com/Sansan4ez/oh-my-tmux.git"
 BRANCH_DEFAULT="main"
 
 REPO="${REPO:-$REPO_DEFAULT}"
