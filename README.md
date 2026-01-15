@@ -11,28 +11,37 @@ A friendly, modern tmux setup inspired by LazyVim and Zellij.
 - Catppuccin theme
 - macOS & SSH friendly
 
-## Install (macOS)
+## Requirements
+- git
+- tmux
+
+## Install
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Sansan4ez/oh-my-tmux/main/install.sh | bash
 ```
-or just copy tmux.conf and tpm plugin:
-```
+
+or manually:
+```bash
 git clone https://github.com/Sansan4ez/oh-my-tmux.git ~/.oh-my-tmux
 cp ~/.oh-my-tmux/tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## Run TMUX
-```
+## Usage
+Start tmux:
+```bash
 tmux
 ```
 
-## Inside tmux:
-For install plugins press:
-'prefix + I'
+Inside tmux, install plugins:
+```
+prefix + I
+```
 
-For which-key press:
-'prefix + Space'
+Open which-key menu:
+```
+prefix + Space
+```
 
 ## Docs
 See docs/ for details.
